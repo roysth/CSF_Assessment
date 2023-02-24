@@ -8,3 +8,12 @@ C:\Program Files\MongoDB\Tools\100\bin>
 Command:
 mongoimport  --port=27017 -dreviews -crestaurants --jsonArray "C:\Users\Roy Soon\Desktop\csf-assessment-template\restaurants.json"
 
+
+
+Uploading to Railway: 
+
+mongoimport --uri="mongodb://mongo:6EOgz0y1HXeYwcpKacIa@containers-us-west-67.railway.app:7127/?authSource=admin" -dreviews --collection=restaurants --jsonArray "C:\Users\Roy Soon\Desktop\csf-assessment-template\restaurants.json"
+
+
+
+
