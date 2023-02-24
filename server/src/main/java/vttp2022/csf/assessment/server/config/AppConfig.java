@@ -15,10 +15,10 @@ public class AppConfig {
 
     @Value("${spaces.access.key}")
     public String spacesAccessKey; 
-    //DO0068DQ8X4N4EEJGH8H
+    
     @Value("${spaces.secret.key}")
     public String spacesSecretKey;
-    //fFKAdGIE3OJWOMAib2kgz/MG4PYfRCfODJl/fegb7b4
+    
 
     @Bean
     public AmazonS3 createS3Client() {
