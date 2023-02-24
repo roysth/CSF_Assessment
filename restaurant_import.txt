@@ -1,0 +1,10 @@
+TODO: Task 1 - Write the mongo import command here
+
+Uploading to localhost:
+
+Directory to run:
+C:\Program Files\MongoDB\Tools\100\bin>
+
+Command:
+mongoimport  --port=27017 -dreviews -crestaurants --jsonArray "C:\Users\Roy Soon\Desktop\csf-assessment-template\restaurants.json"
+

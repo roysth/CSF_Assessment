@@ -1,0 +1,49 @@
+<p>{{restaurant }} DETAILS:</p>
+
+<div *ngIf="rest">
+
+    <h4>Name: <span [innerText]="rest.name"></span></h4>
+
+    <h4>Cuisine: <span [innerText]="rest.cuisine"></span></h4>
+
+    <h4>Address: <span [innerText]="rest.address"></span></h4>
+
+
+    <h4>Map:</h4>
+    
+    <img class="thumbnail" [src]="mapUrl" width="500" >
+
+</div>
+
+<h3>Comments:</h3>
+
+<form [formGroup]="form" (ngSubmit)="submit()">
+
+    <tr>
+        <td>Name:</td>
+        <td><input type="text" formControlName="name" size="30"></td>
+    </tr>
+
+    <tr>
+        <td>Rating:</td>
+        <td><input type="number" formControlName="rating" size="30"></td>
+    </tr>
+
+    <tr>
+        <td>Text:</td>
+        <td><input type="text" formControlName="text" size="30"></td>
+    </tr>
+
+    <tr>
+        <td></td>
+        <td><button type="submit" [disabled]="form.invalid">Submit</button></td>
+    </tr>
+
+    <div>
+        <button type="button" [routerLink]="['/restaurant', rest.cuisine]">Back</button>
+    </div>
+
+
+
+
+</form>
